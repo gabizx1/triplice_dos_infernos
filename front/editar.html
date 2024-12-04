@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0ec4d6, #0aa4c4);
+      color: #040404;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: linear-gradient(135deg, #0ec4d6, #0aa4c4);
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    .button-group {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .button-group button {
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .icon {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      position: relative;
+    }
+    label {
+      display: block;
+      font-size: 16px;
+      text-align: left;
+      margin-bottom: 5px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      background-color: #0ec4d6;
+      color: black;
+    }
+    .edit-icon {
+      position: absolute;
+      right: 10px;
+      top: 35px;
+      font-size: 15px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    .submit-button {
+      background-color: #0ec4d6;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      padding: 12px 20px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .submit-button:hover {
+      background-color: #0aa4c4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="button-group">
+        <button class="btn btnVoltar" onclick="window.location.href='cadastro2_admin.html'">
+            <i class="bi bi-arrow-left"></i> Voltar 
+        </button>
+        <button class="btn btnVoltar" onclick="window.location.href='front.recep.html'">
+            <i class="bi bi-arrow-left"></i> Início  
+        </button>
+    </div>
+    <div class="icon">👤</div>
+    <h1>Editar</h1>
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Digite o nome">
+      <span class="edit-icon">✏️</span>
+    </div>
+    <div class="form-group">
+      <label for="telefone">Telefone:</label>
+      <input type="text" id="telefone" placeholder="Digite o telefone">
+      <span class="edit-icon">✏️</span>
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" placeholder="Digite o e-mail">
+      <span class="edit-icon">✏️</span>
+    </div>
+    <div class="form-group">
+      <label for="usuario">Usuário:</label>
+      <input type="text" id="usuario" placeholder="Digite o usuário">
+      <span class="edit-icon">✏️</span>
+    </div>
+    <div class="form-group">
+      <label for="dataVencimento">Data de Vencimento:</label>
+      <input type="date" id="dataVencimento">
+      <span class="edit-icon">✏️</span>
+    </div>
+    <button class="submit-button" onclick="salvarEdicao()">Editar</button>
+  </div>
+
+  <script>
+    function voltar() {
+      alert("Ação de voltar foi clicada! Implemente a lógica aqui.");
+    }
+
+    function inicio() {
+      alert("Ação de início foi clicada! Implemente a lógica aqui.");
+    }
+
+    function salvarEdicao() {
+      const nome = document.getElementById("nome").value;
+      const telefone = document.getElementById("telefone").value;
+      const email = document.getElementById("email").value;
+      const usuario = document.getElementById("usuario").value;
+      const dataVencimento = document.getElementById("dataVencimento").value;
+
+      if (!nome || !telefone || !email || !usuario || !dataVencimento) {
+        alert("Por favor, preencha todos os campos!");
+        return;
+      }
+
+      alert("Dados salvos com sucesso!");
+      console.log({
+        nome,
+        telefone,
+        email,
+        usuario,
+        dataVencimento
+      });
+    }
+  </script>
+</body>
+</html>
