@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    overflow: hidden;
+    display: block;
+  }
+  
+  /* Estilização da barra lateral (sidebar - boostrap) */
+  .sidebar {
+    background-color: #13d4db;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+  } 
+    
+  .sidebar h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .sidebar .btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    border-radius: 40px;
+    height: 60px;
+    background-color: #9fedef;
+    display: block;
+  }
+
+  .sidebar .btn:hover{
+    background-color: #0f9b9f;
+    color:#ffffff;
+  }
+  
+  .custom-btn{
+    background-color: #dc3545;
+    color: white; 
+    font-weight: bold; 
+    border-radius: 20px; 
+    padding: 6px 30px; 
+    font-size: 15px;
+    border: none; /* Remove borda padrão */
+  }
+
+  .custom-btn {
+    color: white;
+    margin-right: 20px; 
+  }
+
+  .custom-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Estilização do Conteiner Dashboard*/
+  .content {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .content h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  } 
+
+  /* Container onde está o dashboard */
+  .chart-container {
+    border-radius: 20px;
+    max-width: 800px;
+    margin-left: 5px;
+  }
+  
+  canvas {
+      background-color: #0f9b9f;
+      width: 100vh;
+  }
+
+  .btnGrafico{
+    background-color: #213f49;
+    color: white; 
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px; 
+    padding: 6px 30px; 
+    border: none;
+  }
+
+  .btnVoltar{
+    background-color: #121212;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 35px;
+    width: 150px;
+  }
+
+  .form-floating{
+    font-size: 15px;
+    font-weight: bold;
+    color:#0a0a0a;
+  }
+
+  .form-control{
+    border-radius: 30px;
+    border:none;
+    margin-bottom: 5px;
+  }
+
+  .btn.btnForms{
+    background-color: #0ce4eb;
+    color:#0a0a0a;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 30px;
+  }
+
+  .title{
+    margin-top: 70px; 
+    margin-left: 20%; 
+    font-size: 60px
+  }
+
+  .input-cpf {
+    width: 60%;
+  }
+
+  .btnPesquisa {
+    background-color: #0ce4eb;
+    color: #0a0a0a;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 6px 30px;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 500px;
+    height: 45px;
+  }
+
+  .img-background {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .container{
+    margin-top: 100px;
+    margin-left: 80px;
+    padding: 5px;
+    display: flex;
+    align-items:first baseline;
+  }
+  .areaCinza{
+    width: 500px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .select{
+    display: flex;
+    align-items: end;
+    position: relative;
+    right: 20px;
+  }
+  

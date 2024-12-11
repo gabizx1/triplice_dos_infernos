@@ -1,0 +1,124 @@
+<!--ÁREA DO ADMINISTRADOR-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitManager</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  
+  <!-- Adiciona fonte da letra (nunito)-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+  
+  <!-- Adiciona ícone a janela -->
+  <link rel="icon" href="images/FM.png" type="image/x-icon">
+
+  <!-- Conexão com meu arquivo de estilização-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.recep.css">
+
+  <!-- Gerar gráfico -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    
+  .card-container {
+    position: relative;
+    background-color: #0f9b9f; /* Cor do fundo */
+    width: 400px; /* Largura do cartão */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    color: #fff; /* Cor do texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    font-family: Arial, sans-serif;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 20px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
+    width: 50px; /* Largura do ícone */
+    height: 50px; /* Altura do ícone */
+    background-color: #fff; /* Fundo do ícone */
+    border-radius: 50%; /* Torna o ícone circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon img {
+    width: 30px; /* Tamanho da imagem */
+    height: 30px;
+  }
+  
+  .content {
+    margin-left: 80px; /* Espaço para o ícone */
+  }
+  
+  .content h3 {
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    font-size: 18px;
+    text-transform: uppercase; /* Letras maiúsculas */
+  }
+  
+  .content p {
+    margin: 5px 0; /* Espaçamento entre as linhas */
+    font-size: 16px;
+  }
+  
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid vh-100 p-0">
+    <div class="row h-100 m-0">
+
+      <div class="col-md-7 col-lg-7 content p-4 position-relative">
+        <h1 class="text-center text-white">FitManager</h1>
+        <h3 class="text-center text-white">ÁREA RECEPCIONISTA</h3>
+
+       <!--  Conteiner (Parte dos dados)
+        <div class="col-md-1 col-lg-1 card-container contentcontainer-md bg-white">
+            <div class="icon">
+              <img src="images/user-icon.png" alt="User Icon">
+            </div>
+            <div class="content">
+              <h3>DADOS</h3>
+              <p><strong>Nome:</strong> ___________________________</p>
+              <p><strong>CPF:</strong> ____________________________</p>
+              <p><strong>Email:</strong> ___________________________</p>
+              <p><strong>Telefone:</strong> ________________________</p>
+            </div>
+        </div>-->
+
+      </div>
+
+      <!--Transição de triangulo -->
+      <div class="col-md-3 col-lg-2 content position-relative">
+        <img src="images/transicao.png" style="width: 205px; height: 100vh; ">
+      </div>
+
+      <!-- Sidebar (Barra Lateral) -->
+      <div class="col-md-4 col-lg-3 p-0 gap-4 sidebar d-flex flex-column justify-content-center align-items-center position-relative">
+        <h2 class="text-black text-center mb-2 mt-5 fs-3">GERENCIAR ALUNO</h2>
+        <button class="btn mb-3 w-75" onclick = "window.location.href='cadastro_recep.html'">CADASTRAR</button>
+        <button class="btn mb-3 w-75" onclick = "window.location.href=' '">REMOVER</button>
+        <button class="btn mb-3 w-75" onclick = "window.location.href=' '">EXIBIR</button>
+        <button class="btn mb-3 w-75" onclick = "window.location.href='exibi_recep.html'">EDITAR</button>
+        <button class="btn mb-1 w-75" onclick = "window.location.href='#leticia '">PENDÊNCIAS</button>
+
+        <button class="custom-btn ms-auto mt-1 mb-5" onclick="window.locarion.href='#leticia fazer'"><i class="bi bi-box-arrow-right"></i> SAIR </button>
+      </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+  
